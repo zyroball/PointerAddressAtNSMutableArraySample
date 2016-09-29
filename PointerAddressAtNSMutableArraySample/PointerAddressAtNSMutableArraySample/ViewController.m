@@ -57,9 +57,7 @@
     
     sampleA = useDataArray;
     
-    for (NSString *string in sampleA) {
-        [sampleB addObject:string];
-    }
+    sampleB = sampleA.mutableCopy;
     
     [sampleA addObject: @"http://www.testD.jp"];
     
